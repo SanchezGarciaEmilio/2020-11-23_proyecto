@@ -1,6 +1,6 @@
 /*Datos sobre los empleados de la empresa, incluyendo su nombre, puesto, salario(€) y DNI.*/
 
-db.Empleados.InsertMany([
+db.Empleados.insertMany([
     {"_id": 101, "Nombre":"CORREA CASADO MATIAS", "Puesto":"Ventas", "Salario":1200, "DNI":542234795},
     {"_id": 102, "Nombre":"FERNANDEZ SEGUIN HUGO", "Puesto":"Contabilidad", "Salario":1125, "DNI":54795423},
     {"_id": 103, "Nombre":"GALVEZ IBARRA ALICIA", "Puesto":"Ventas", "Salario":1475, "DNI":149756345},
