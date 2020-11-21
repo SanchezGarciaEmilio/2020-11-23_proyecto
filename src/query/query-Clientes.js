@@ -18,9 +18,9 @@ db.Clientes.find({$or:[
 ]})
 
 
-/**/
+/*Busca todos los clientes que no se llamen Erick ni su dinero gastado está entre Ñ*/
 db.Clientes.find({$nor:[
     {"Nombre": {$regex: /ERICK/}},
-    {"DineroGastado": {$elemMatch: { {$gte: 50}, {$lte: 100} }}}
+    {"DineroGastado": { $gte: 50, $lt: 100 }}
 ]})
 
