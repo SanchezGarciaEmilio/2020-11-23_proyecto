@@ -11,11 +11,11 @@ db.Productos.find({$and:[
 db.Productos.find({$or:[
     {"Etiquetas": {$elemMatch: {$gte: 15, $lte: 20}}},
     {"Descripcion": {$regex: /^Tornillos/}}
-]})
+]}).pretty()
 
 
 /*Nos devuelve los productos cuyas etiquetas no contegan ni 9, ni 18 ni 24, y que además su nombre contenga un "Barras" y algo más.*/
 db.Productos.find({$and:[
     {"Etiquetas": {$nin: [9, 18, 24]}},
     {"Nombre": {$regex: /Barras\b/}}
-]})
+]}).pretty()
