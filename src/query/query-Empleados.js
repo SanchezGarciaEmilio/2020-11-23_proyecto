@@ -10,7 +10,7 @@ db.Empleados.find({$and: [
 
 /*Buscamos todos los empleados que tengan un VA en su nombre y su salario supere los 1600.*/
 db.Empleados.find({$and: [
-    {"Nombre": {$regex: /VA/, $options: 'I'}},
+    {"Nombre": {$regex: /VA/}},
     {"Salario": {$gt: 1600}}
 ]}).pretty()
 
