@@ -1,4 +1,4 @@
-/*Datos sobre los productos vendidos, incluyendo su ID, nombre, precio (€), cantidad(por unidad), características(largo y ancho por metro, calidad del 0-10), su estado (vendido o no) y una descripción.*/
+/*Datos sobre los productos vendidos, incluyendo su ID, nombre, precio (€), cantidad(por unidad), características(largo y ancho por metro, calidad del 0-10), su estado (vendido o no), sus etiquetas y una descripción.*/
 
 db.Productos.insertMany([
     {"_id": "PDA", "Nombre": "Panel de acero", "Precio": 10, "Cantidad": 30, "Caracteristicas": 
